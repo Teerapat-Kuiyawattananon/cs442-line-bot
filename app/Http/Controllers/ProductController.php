@@ -127,4 +127,8 @@ class ProductController extends Controller
             'message' => 'create failed'
         ], Response::HTTP_BAD_REQUEST);
     }
+
+    public function show(Product $product) {
+        return view("botView");
+    }
 }
